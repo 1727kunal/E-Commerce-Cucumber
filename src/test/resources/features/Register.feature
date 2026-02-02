@@ -1,14 +1,16 @@
 Feature: 
-Signup
+Register
 
-Scenario:
-Verify the signup feature for the valid data inputs
-
+Background:
 Given User opens the browser
 And Hit the URL
 Then User should land on the homepage
 When User clicks on MyAccount button
-And User clicks on Register button
+
+Scenario:
+Verify the signup feature for the valid data inputs
+
+When User clicks on Register button
 Then User should land on the registration page
 When User enters first name
 And User enters last name

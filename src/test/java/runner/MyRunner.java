@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = {"src/test/resources/features"},
 		glue = {"stepdefinations"},
 		plugin = {"pretty","json:target/cucumber.json", "html:target/cucumber.html"},
-		monochrome = true
+		monochrome = false
 		)
 public class MyRunner {
 	

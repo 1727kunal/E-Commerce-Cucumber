@@ -15,7 +15,7 @@ public class HomePage {
 	@FindBy(xpath = "//a[contains(text(),'Register')]")
 	WebElement registerBtn;
 	@FindBy(xpath = "//a[contains(text(),'Login')]")
-	WebElement loginBtn;
+	WebElement loginLink;
 	
 	WebDriver driver;
 	WebDriverWait wait;
@@ -36,9 +36,9 @@ public class HomePage {
 		registerBtn.click();
 	}
 	
-	public void clickLoginButton() {
-		wait.until(ExpectedConditions.visibilityOf(loginBtn));
-		loginBtn.click();
+	public void clickLoginLink() {
+		wait.until(ExpectedConditions.visibilityOf(loginLink));
+		loginLink.click();
 	}
 	public String getHomePageTitle() {
 		wait.until(ExpectedConditions.titleContains("Your Store"));
