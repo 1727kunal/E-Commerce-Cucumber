@@ -62,4 +62,12 @@ public class CommonSteps {
 			driver.quit();	
 		}
 	}
+
+	public void holdExecutionForSeconds(long miliSec){
+		try {
+			Thread.sleep(miliSec);
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
 }
