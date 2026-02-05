@@ -1,9 +1,7 @@
 Feature: Verifying the login with data table
 
   Scenario: Verifying the login feature with valid and invalid inputs using the data table
-    Given User opens the browser
-    And Hit the URL
-    Then User should land on the homepage
+    Given User should land on the homepage
     When User clicks on MyAccount button
     When User clicks on Login link
     Then User should land on the login page

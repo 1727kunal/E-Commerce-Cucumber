@@ -1,5 +1,6 @@
 package stepdefinations;
 
+import hooks.Hooks;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
@@ -33,7 +34,7 @@ public class LoginDataTableSteps {
                 status = false;
                 Assert.assertFalse(status);
             }
-            common.driver.navigate().refresh();
+            Hooks.driver.navigate().refresh();
         }
     }
 }
