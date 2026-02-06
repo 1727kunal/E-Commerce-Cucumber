@@ -10,6 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/features"},
 		glue = {"stepdefinations","hooks"},
+//		tags = "not @DataDriven",
 		dryRun = false,
 		plugin = {"pretty","html:target/cucumber.html"},
 		monochrome = true

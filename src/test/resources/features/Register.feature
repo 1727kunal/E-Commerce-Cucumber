@@ -3,7 +3,7 @@ Feature: Register
   Background:
     Given User should land on the homepage
     When User clicks on MyAccount button
-
+@Smoke@Regression
   Scenario: Verify the signup feature for the valid data inputs
     When User clicks on Register button
     Then User should land on the registration page

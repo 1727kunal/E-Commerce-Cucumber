@@ -1,5 +1,6 @@
 Feature: Verifying the login with data table
 
+  @DataDriven
   Scenario: Verifying the login feature with valid and invalid inputs using the data table
     Given User should land on the homepage
     When User clicks on MyAccount button
