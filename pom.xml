@@ -35,10 +35,16 @@
         </dependency>
         <!-- Source:
         https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter-api</artifactId>-->
+<!--            <version>5.14.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.14.2</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
         <!-- Source:
@@ -165,11 +171,11 @@
                         </goals>
                         <configuration>
                             <projectName>E-Commerce-Cucumber</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
+                            <outputDirectory>target/cucumber-html-reports</outputDirectory>
                             <jsonFiles>
-                                <param>${project.build.directory}/cucumber-reports/Login.json</param>
-                                <param>${project.build.directory}/cucumber-reports/LoginDataTable.json</param>
-                                <param>${project.build.directory}/cucumber-reports/Register.json</param>
+                                <param>target/cucumber-reports/Login.json</param>
+                                <param>target/cucumber-reports/LoginDataTable.json</param>
+                                <param>target/cucumber-reports/Register.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>
