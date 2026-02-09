@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 		glue = {"stepdefinations","hooks"},
 //		tags = "not @DataDriven",
 		dryRun = false,
-		plugin = {"pretty","json:target/cucumber-reports/LoginDataTable.json"},
+		plugin = {"pretty","html:target/cucumber-reports/LoginDataTable.html"},
 		monochrome = true
 		)
 public class RunnerLoginDataTable {

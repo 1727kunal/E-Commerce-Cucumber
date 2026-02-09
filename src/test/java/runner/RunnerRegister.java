@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 		glue = {"stepdefinations","hooks"},
 //		tags = "not @DataDriven",
 		dryRun = false,
-		plugin = {"pretty","json:target/cucumber-reports/Register.json"},
+		plugin = {"pretty","html:target/cucumber-reports/Register.html"},
 		monochrome = true
 		)
 public class RunnerRegister {

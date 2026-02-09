@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"stepdefinations","hooks"},
 //		tags = "not @DataDriven",
 		dryRun = false,
-		plugin = {"pretty","json:target/cucumber-reports/Login.json"},
+		plugin = {"pretty","html:target/cucumber-reports/Login.html"},
 		monochrome = true
 		)
 public class RunnerLogin {
