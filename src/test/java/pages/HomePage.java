@@ -16,30 +16,31 @@ public class HomePage {
 	WebElement registerBtn;
 	@FindBy(xpath = "//a[contains(text(),'Login')]")
 	WebElement loginLink;
-	
+
 	WebDriver driver;
 	WebDriverWait wait;
-	
-	public HomePage(WebDriver driver){
+
+	public HomePage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(driver, this);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-	
+
 	public void clickMyAccountButton() {
 		wait.until(ExpectedConditions.visibilityOf(myAccBtn));
 		myAccBtn.click();
 	}
-	
+
 	public void clickRegisterButton() {
 		wait.until(ExpectedConditions.visibilityOf(registerBtn));
 		registerBtn.click();
 	}
-	
+
 	public void clickLoginLink() {
 		wait.until(ExpectedConditions.visibilityOf(loginLink));
 		loginLink.click();
 	}
+
 	public String getHomePageTitle() {
 		wait.until(ExpectedConditions.titleContains("Your Store"));
 		return driver.getTitle();

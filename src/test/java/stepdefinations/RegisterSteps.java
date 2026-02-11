@@ -1,6 +1,6 @@
 package stepdefinations;
 
-import org.testng.Assert;
+import org.junit.Assert;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;

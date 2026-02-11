@@ -1,7 +1,6 @@
 package stepdefinations;
 
-import io.cucumber.java.PendingException;
-import org.testng.Assert;
+import org.junit.Assert;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -42,9 +41,9 @@ public class LoginSteps {
 
 	@Then("User should see the {string}")
 	public void userShouldSeeThe(String expectedLoginStatus) {
-		if(expectedLoginStatus.equalsIgnoreCase("my account page"))
+		if (expectedLoginStatus.equalsIgnoreCase("my account page"))
 			Assert.assertEquals(common.myAccountPageObj.getMyAccountPageTitle(), "My Account");
-		else if(expectedLoginStatus.equalsIgnoreCase("error message"))
-			Assert.assertEquals(common.loginPageObj.getLoginPageTitle(),"Account Login");
+		else if (expectedLoginStatus.equalsIgnoreCase("error message"))
+			Assert.assertEquals(common.loginPageObj.getLoginPageTitle(), "Account Login11");
 	}
 }
